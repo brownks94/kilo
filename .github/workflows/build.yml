@@ -105,6 +105,7 @@ jobs:
 
       - name: 'Build package'
         run: |
+          export MACOSX_DEPLOYMENT_TARGET=10.6
           autoreconf -i
           mkdir -p build
           cd build
